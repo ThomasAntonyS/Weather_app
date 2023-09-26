@@ -1,13 +1,13 @@
-weatherTypes=["☀️","🌧️","🌥️","⛈️","❄️","🌦️","💨","💧"];
+weatherTypes=["☀️","🌧️","🌥️","⛈️","❄️","🌦️","☃️","💨","💧"];
 
 const weatherImg=document.getElementById('weatherImg')
 weatherImg.innerText=weatherTypes[0];
 
 const humidityImage = document.getElementById('humidity-image')
-humidityImage.innerText=weatherTypes[7]
+humidityImage.innerText=weatherTypes[8]
 
 const windImage = document.getElementById('wind-speed-image')
-windImage.innerText=weatherTypes[6]
+windImage.innerText=weatherTypes[7]
 
 
 const inputBox = document.getElementById('inputBox')
@@ -30,16 +30,16 @@ async function weatherDetails(city){
 
     //Updating images 
 
-    if(data.weather[0].main=='Thunder Storm')
+    if(data.weather[0].main=='Clear')
     weatherImg.innerText=weatherTypes[0]
 
-    if(data.weather[0].main=='Rainy')
+    if(data.weather[0].main=='Rain')
     weatherImg.innerText=weatherTypes[1]
 
     if(data.weather[0].main=='Clouds')
     weatherImg.innerText=weatherTypes[2]
     
-    if(data.weather[0].main=='Thunder Storm')
+    if(data.weather[0].main=='Thunderstorm')
     weatherImg.innerText=weatherTypes[3]
 
     if(data.weather[0].main=='Mist')
@@ -47,6 +47,9 @@ async function weatherDetails(city){
 
     if(data.weather[0].main=='Drizzle')
     weatherImg.innerText=weatherTypes[5]
+
+    if(data.weather[0].main=='Snow')
+    weatherImg.innerText=weatherTypes[6]
 
 
     //updating data
