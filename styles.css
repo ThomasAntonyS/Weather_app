@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container{
+    position: relative;
+    top: 80px;
+    left: 36%;
+    height: 570px;
+    width: 420px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
+    background: linear-gradient(135deg,rgb(111, 253, 191),rgb(36, 198, 204) 30%,rgb(86, 120, 255) 80%);
+}
+
+.search-bar{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & input{
+        width: 280px;
+        padding: 7px 10px;
+        font-size: 1.3em;
+        border: 1px solid white;
+        border-radius: 10px;
+        outline: none;
+        color: rgb(174, 174, 174);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    & button{
+        display: flex;
+        justify-content: center;
+        padding: 7px;
+        margin-left: 25px;
+        font-size: 1.2em;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.weather-image{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 130px;
+
+    & #weatherImg{
+        font-size: 7em;
+        text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.242);
+    }
+}
+
+.data-container{
+    position: relative;
+    top: 10px;
+    margin: 10px;
+    height: 170px;
+
+    & #temperature-data{
+        color: white;
+        font-size: 3em;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 20px;
+    }
+
+    & #city-name{
+        color: white;
+        font-size: 3.3em;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+.footer-parameters{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+
+    & .humidity{
+        display: flex;
+    }
+
+    & .wind-speed{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    & #humidity-data,#wind-speed-data,#humidity-title,#wind-speed-title{
+        display: flex;
+        align-items: center;
+        font-size: 1.3em;
+        color: rgb(229, 229, 229);
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+
+    & #humidity-image{
+        font-size: 2.5em;
+        text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+
+    & #wind-speed-image{
+        font-size: 2.5em;
+        margin-right: 5px;
+        text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+}
