@@ -59,7 +59,6 @@ async function weatherDetails(city){
     humidityData.innerText = data.main.humidity + "%"
     windSpeedData.innerText = data.wind.speed + " km/hr"
 
-    console.log(data)
         
 }
 
