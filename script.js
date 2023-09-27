@@ -19,7 +19,7 @@ const cityName = document.getElementById('city-name')
 
 
 
-apikey=`your api key`
+apikey=``
 
 
 
