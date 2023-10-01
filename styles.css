@@ -11,23 +11,25 @@ body{
 }
 
 header{
-    height: 8vh;
+    height: 9vh;
     color: rgb(118, 118, 118);
     font-weight: bold;
     font-size: 2rem;
-    margin-top: 11px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: -50px;
     padding: 10px;
     letter-spacing: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-bottom: 2px solid rgb(151, 151, 151);
     background-color: rgba(214,230,253,255);
+
+    & p{
+        margin-left: -20px;
+    }
 }
 
 .main-container{
     position: relative;
-    top: 50px;
-    left: 36.5%;
+    margin: auto;
+    top: 55px;
     height: 570px;
     width: 420px;
     overflow: hidden;
@@ -150,5 +152,12 @@ footer{
 
     & span{
         font-weight: bold;
+    }
+}
+
+@media (max-width:420px) {
+
+    .main-container{
+        width: 100vw;
     }
 }
