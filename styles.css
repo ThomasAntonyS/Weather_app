@@ -33,7 +33,7 @@ header{
     overflow: hidden;
     background-color: white;
     border-radius: 16px;
-    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.75);
     background: linear-gradient(135deg,rgb(111, 253, 191),rgb(36, 198, 204) 30%,rgb(86, 120, 255) 80%);
 }
 
@@ -65,6 +65,13 @@ header{
         border-radius: 50%;
         cursor: pointer;
     }
+}
+
+#error-message{
+    color: rgb(237, 237, 235);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 45px;
 }
 
 .weather-image{

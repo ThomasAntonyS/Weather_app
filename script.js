@@ -25,41 +25,47 @@ apikey=``
 
 async function weatherDetails(city){
     
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?&units=metric&q=${city}&appid=${apikey}`)
-    var data = await response.json()
-
-    //Updating images 
-
-    if(data.weather[0].main=='Clear')
-    weatherImg.innerText=weatherTypes[0]
-
-    if(data.weather[0].main=='Rain')
-    weatherImg.innerText=weatherTypes[1]
-
-    if(data.weather[0].main=='Clouds')
-    weatherImg.innerText=weatherTypes[2]
+    try{
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?&units=metric&q=${city}&appid=${apikey}`)
+        var data = await response.json()
     
-    if(data.weather[0].main=='Thunderstorm')
-    weatherImg.innerText=weatherTypes[3]
-
-    if(data.weather[0].main=='Mist')
-    weatherImg.innerText=weatherTypes[4]
-
-    if(data.weather[0].main=='Drizzle')
-    weatherImg.innerText=weatherTypes[5]
-
-    if(data.weather[0].main=='Snow')
-    weatherImg.innerText=weatherTypes[6]
-
-
-    //updating data
-
-    cityName.innerText = data.name
-    temperatureData.innerText = Math.round(data.main.temp) + "°C"
-    humidityData.innerText = data.main.humidity + "%"
-    windSpeedData.innerText = data.wind.speed + " km/hr"
-
+        //Updating images 
+    
+        if(data.weather[0].main=='Clear')
+        weatherImg.innerText=weatherTypes[0]
+    
+        if(data.weather[0].main=='Rain')
+        weatherImg.innerText=weatherTypes[1]
+    
+        if(data.weather[0].main=='Clouds')
+        weatherImg.innerText=weatherTypes[2]
         
+        if(data.weather[0].main=='Thunderstorm')
+        weatherImg.innerText=weatherTypes[3]
+    
+        if(data.weather[0].main=='Mist')
+        weatherImg.innerText=weatherTypes[4]
+    
+        if(data.weather[0].main=='Drizzle')
+        weatherImg.innerText=weatherTypes[5]
+    
+        if(data.weather[0].main=='Snow')
+        weatherImg.innerText=weatherTypes[6]
+    
+    
+        //updating data
+    
+        cityName.innerText = data.name
+        temperatureData.innerText = Math.round(data.main.temp) + "°C"
+        humidityData.innerText = data.main.humidity + "%"
+        windSpeedData.innerText = data.wind.speed + " km/hr"
+        
+        //error message removal
+        document.getElementById('error-message').innerText=""
+    }
+    catch(err){
+        document.getElementById('error-message').innerText="Enter Valid City ..."
+    }
 }
 
 
