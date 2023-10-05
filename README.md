@@ -2,16 +2,16 @@
 
 ## Hello Reader,
 
-This is my _Weather App_  **'A basic Responsive and Realtime Weather display'**  Project developed using HTML , CSS and Java Script .
+This is my _Weather App_  **'A basic Responsive and Realtime Weather'**  Project developed using HTML , CSS , Java Script and API .
 
 ### OPERATION :
-[1] If user enters correct name of a city(any) , then following are displayed or updated :
+[1] If user enters a valid city(any) , then following data is acessed and updated from the api :
    * Temperture
    * Humidity
    * Wind Speed
    * An image
      
-[2] If user enters a wrong city name , the an error message is displayed .
+[2] If user enters a invalid city , then a error message is displayed .
 
 ---------------------------------------------
 
