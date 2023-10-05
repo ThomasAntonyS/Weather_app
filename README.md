@@ -2,8 +2,20 @@
 
 ## Hello Reader,
 
-This is my _Weather App_  **'A basic Responsive and Realtime Weather display'**  Project developed using HTML , CSS and Java Script .
-In the process of developing this project I Learnt :
+This is my _Weather App_  **'A basic Responsive and Realtime Weather display'**  Project based on developed using HTML , CSS and Java Script .
+
+### OPERATION :
+[1] If user enters correct name of a city(any) , then following are displayed or updated :
+   * Temperture
+   * Humidity
+   * Wind Speed
+   * An image
+     
+[2] If user enters a wrong city name , the an error message is displayed .
+
+---------------------------------------------
+
+### LEARNING :
 
 - Basic VCS commands
    - Creating a Reposotory
@@ -20,7 +32,9 @@ In the process of developing this project I Learnt :
     - Async Functions
     - Try - Catch block
 
- - Html and Css 
+ - HTML and CSS
+
+ ----------------------------------------------
 
 That's it !! Here's the Output :
 
