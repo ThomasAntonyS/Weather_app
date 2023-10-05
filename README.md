@@ -2,7 +2,7 @@
 
 ## Hello Reader,
 
-This is my _Weather App_  **'A basic Responsive and Realtime Weather display'**  Project based on developed using HTML , CSS and Java Script .
+This is my _Weather App_  **'A basic Responsive and Realtime Weather display'**  Project developed using HTML , CSS and Java Script .
 
 ### OPERATION :
 [1] If user enters correct name of a city(any) , then following are displayed or updated :
