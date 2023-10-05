@@ -65,6 +65,10 @@ async function weatherDetails(city){
     }
     catch(err){
         document.getElementById('error-message').innerText="Enter Valid City ..."
+        cityName.innerText = '-'
+        temperatureData.innerText = '-'
+        humidityData.innerText = '--'
+        windSpeedData.innerText = '--'
     }
 }
 

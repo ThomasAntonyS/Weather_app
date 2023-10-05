@@ -70,7 +70,7 @@ header{
 }
 
 #error-message{
-    color: rgb(237, 237, 235);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     margin-left: 45px;
@@ -155,9 +155,57 @@ footer{
     }
 }
 
+@media (max-width:360px) {
+
+    .main-container{
+        position: relative;
+        top: 35px;
+        width: 95vw;
+        margin: 10px;
+    }
+
+    .search-bar input{
+        width: 90%;
+    }
+
+    #weatherImg{
+        margin-left: -50px;
+    }
+
+    .footer-parameters #humidity-data, 
+    .footer-parameters #wind-speed-data, 
+    .footer-parameters #humidity-title ,
+    .footer-parameters #wind-speed-title{
+        font-size: 1.2em;
+    }
+
+    .footer-parameters #humidity-image,
+    .footer-parameters #wind-speed-image{
+        font-size: 1.8em;
+    }
+
+    footer{
+        font-size: 1.2em;
+    }
+}
+
 @media (max-width:420px) {
 
     .main-container{
-        width: 100vw;
+        width: 95vw;
+        margin: 10px;
+    }
+
+    .search-bar input{
+        width: 90%;
+    }
+
+    #weatherImg{
+        margin-left: -50px;
+    }
+
+    footer{
+        font-size: 1.2em;
     }
 }
+
