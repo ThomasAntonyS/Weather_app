@@ -2,11 +2,11 @@
 
 ## Hello Reader,
 
-This is my _Weather App_  **'A basic Responsive and Realtime Weather'**  Project developed using HTML , CSS , Java Script and API .
+This is my _Weather App_  **'A basic Responsive and Realtime Weather'**  Project developed using HTML , CSS , Java Script and Open Weather API .
 
 ### OPERATION :
-[1] If user enters a valid city(any) , then following data is acessed and updated from the api :
-   * Temperture
+[1] If user enters a valid city(any) , then following data is accessed and updated from the api :
+   * Temperature
    * Humidity
    * Wind Speed
    * An image
