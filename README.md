@@ -17,7 +17,7 @@ This is my _Weather App_  **'A basic Responsive and Realtime Weather'**  Project
 
 ### LEARNING :
 
-- Basic VCS commands
+- Basic git commands
    - Creating a Reposotory
    - Commiting Change
    - Handling Merge Conflicts
