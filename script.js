@@ -72,11 +72,6 @@ async function weatherDetails(city){
     }
 }
 
-
 searchBox.addEventListener('click',()=>{
     weatherDetails(inputBox.value)
 })
-
-
-
-
