@@ -36,6 +36,9 @@ This is my _Weather App_  **'A basic Responsive and Realtime Weather'**  Project
 
  ----------------------------------------------
 
-That's it !! Here's the Output :
+ That's it !! Here's the Output :
+ 
+ ![output](https://github.com/ThomasAntonyS/Weather_App/assets/138411490/9e5c01ae-31e0-43be-971d-bfbb36073207)
 
-![Screenshot 2023-10-04 215306](https://github.com/ThomasAntonyS/Weather_App/assets/138411490/6f5c90ba-cf39-4e72-93d3-17782304d120)
+
+
